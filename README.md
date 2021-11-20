@@ -7,9 +7,9 @@ Everyone starts in Ubuntu with Gnome. Then, you realize you can greatly improve 
 ## What's it about?
 `sexwm` is a window manager. It manages how the windows are organized on the screen. There are a whole lot of these (`i3`, `bspwm`, `dwm`, `awesome`...). Specifically, it's a floating WM. Windows float around every part of the screen, have arbitrary dimensions, and stack on top of each other. Most of the ideas `sexwm` uses come form different already existing WMs:
 
-- `bspwm`, by @baskerville, has great modularity. The WM itself does only exactly what it needs to do, it doesn't even control the hotkeys. This last part is done by a different program, `sxhkd`. This is great design, so `sexwm` takes it. This way, `sexwm` needs `sxhkd` (or equivalent) to work. Otherwise, it's just a black screen. The only hotkey `sexwm` has hardcoded is the key to move and resize windows: `Super + left click` moves, `Super + right click` resizes.
+- [`bspwm`](https://github.com/baskerville/bspwm), by [@baskerville](https://github.com/baskerville), has great modularity. The WM itself does only exactly what it needs to do, it doesn't even control the hotkeys. This last part is done by a different program, `sxhkd`. This is great design, so `sexwm` takes it. This way, `sexwm` needs `sxhkd` (or equivalent) to work. Otherwise, it's just a black screen. The only hotkey `sexwm` has hardcoded is the key to move and resize windows: `Super + left click` moves, `Super + right click` resizes.
 - `bspwm`, again, has an outstanding configuration paradigm. There is no configuration file, no syntax to learn. There's only a shell script that dynamically tells `bspwm` how it should behave (kind of like bash). This way, you can temporally alter the configuration on the fly, and only make it permanent if you wish to do so. This paradigm makes both the configuration by the user easier (no weird syntax to memorize), as well as the code (no parsing is necessary).
-- `cwm`, by @mariusae, introduces the concept of _window groups_. They substitute multiple desktops in what I think is a beautiful way that also fits my workflow. Kind of like with multiple desktops in tiling WMs, each window group focuses on one task: for instance, virtual machines, which would contain the `virt-manager` program as well as each Spice monitor. You can then stack multiple window groups on top of each other, showing and hiding them at will, without losing visibility of what's on the background.
+- [`cwm`](https://github.com/mariusae/cwm), by [@mariusae](https://github.com/mariusae), introduces the concept of _window groups_. They substitute multiple desktops in what I think is a beautiful way that also fits my workflow. Kind of like with multiple desktops in tiling WMs, each window group focuses on one task: for instance, virtual machines, which would contain the `virt-manager` program as well as each Spice monitor. You can then stack multiple window groups on top of each other, showing and hiding them at will, without losing visibility of what's on the background.
 - Unlike `cwm`, and following the line of `bspwm`, a WM should never have to tell you anything. It should be transparent and show no messages to the user: if it does, it will display the information in an ugly way.
 
 A window in `sexwm` can be in one of the following states:
@@ -30,6 +30,6 @@ The `sexwm` start-up script (`~/.config/sexwm`) can set which mode a window has 
 ## Acknowledgements
 Thanks to:
 
-- @baskerville for `bspwm`. Even though no code is used from it, it's a great project.
-- @mariusae for `cwm`, which really cool ideas. No code is used from it either.
-- @dylanaraps for `sowm`, a tiny WM which was very useful to understand the concepts.
+- [@baskerville](https://github.com/baskerville) for [`bspwm`](https://github.com/baskerville/bspwm). Even though no code is used from it, it's a great project.
+- [@mariusae](https://github.com/mariusae) for [`cwm`](https://github.com/mariusae/cwm), which really cool ideas. No code is used from it either.
+- [@dylanaraps](https://github.com/dylanaraps) for [`sowm`](https://github.com/dylanaraps/sowm), a tiny WM which was very useful for understanding the concepts.
