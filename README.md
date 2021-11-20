@@ -1,5 +1,5 @@
 # sexwm
-Simple and efficient X11 window manager
+Simple and efficient X11 window manager.
 
 ## Why?
 Everyone starts in Ubuntu with Gnome. Then, you realize you can greatly improve your productivity with more advanced window managers such as the listed above. You start to configure them so they fit your workflow. At some point, some of us start to realize that our WM has way more features than we need, as well as some that are missing. The only way to have a WM that completely and _exclusively_ follows your workflow is to make it yourself.
@@ -26,3 +26,10 @@ sexc win -s monocle
 The `sexwm` start-up script (`~/.config/sexwm`) can set which mode a window has by default before it's opened.
 
 **TODO:** Explain how this works.
+
+## Acknowledgements
+Thanks to:
+
+- @baskerville for `bspwm`. Even though no code is used from it, it's a great project.
+- @mariusae for `cwm`, which really cool ideas. No code is used from it either.
+- @dylanaraps for `sowm`, a tiny WM which was very useful to understand the concepts.
